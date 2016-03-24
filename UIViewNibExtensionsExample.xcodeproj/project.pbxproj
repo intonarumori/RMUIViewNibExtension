@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		A5D076AD1CA42241003528EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D076AC1CA42241003528EE /* main.m */; };
 		A5D076B01CA42241003528EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D076AF1CA42241003528EE /* AppDelegate.m */; };
-		A5D076B31CA42241003528EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D076B21CA42241003528EE /* ViewController.m */; };
 		A5D076B61CA42241003528EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D076B41CA42241003528EE /* Main.storyboard */; };
 		A5D076B81CA42241003528EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D076B71CA42241003528EE /* Assets.xcassets */; };
 		A5D076BB1CA42241003528EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D076B91CA42241003528EE /* LaunchScreen.storyboard */; };
 		A5D076C61CA42242003528EE /* UIViewNibExtensionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D076C51CA42242003528EE /* UIViewNibExtensionsExampleTests.m */; };
+		A5D076DC1CA42262003528EE /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D076D21CA42262003528EE /* OtherViewController.m */; };
+		A5D076DD1CA42262003528EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D076D31CA42262003528EE /* ViewController.swift */; };
+		A5D076F71CA4234E003528EE /* DifferentXibNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D076F01CA4234E003528EE /* DifferentXibNameView.xib */; };
+		A5D076F81CA4234E003528EE /* MismatchingTypeXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D076F11CA4234E003528EE /* MismatchingTypeXibView.swift */; };
+		A5D076F91CA4234E003528EE /* MismatchingTypeXibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D076F21CA4234E003528EE /* MismatchingTypeXibView.xib */; };
+		A5D076FA1CA4234E003528EE /* MissingXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D076F31CA4234E003528EE /* MissingXibView.swift */; };
+		A5D076FB1CA4234E003528EE /* SameNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D076F41CA4234E003528EE /* SameNameView.swift */; };
+		A5D076FC1CA4234E003528EE /* SameNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D076F51CA4234E003528EE /* SameNameView.xib */; };
+		A5D076FD1CA42357003528EE /* DifferentNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D076EF1CA4234E003528EE /* DifferentNameView.swift */; };
+		A5D077011CA42489003528EE /* UIView+NibExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D077001CA42489003528EE /* UIView+NibExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +40,6 @@
 		A5D076AC1CA42241003528EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5D076AE1CA42241003528EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5D076AF1CA42241003528EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A5D076B11CA42241003528EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A5D076B21CA42241003528EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A5D076B51CA42241003528EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5D076B71CA42241003528EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5D076BA1CA42241003528EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +47,18 @@
 		A5D076C11CA42242003528EE /* UIViewNibExtensionsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewNibExtensionsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D076C51CA42242003528EE /* UIViewNibExtensionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewNibExtensionsExampleTests.m; sourceTree = "<group>"; };
 		A5D076C71CA42242003528EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D076D11CA42262003528EE /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		A5D076D21CA42262003528EE /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		A5D076D31CA42262003528EE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5D076EF1CA4234E003528EE /* DifferentNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DifferentNameView.swift; sourceTree = "<group>"; };
+		A5D076F01CA4234E003528EE /* DifferentXibNameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DifferentXibNameView.xib; sourceTree = "<group>"; };
+		A5D076F11CA4234E003528EE /* MismatchingTypeXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MismatchingTypeXibView.swift; sourceTree = "<group>"; };
+		A5D076F21CA4234E003528EE /* MismatchingTypeXibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MismatchingTypeXibView.xib; sourceTree = "<group>"; };
+		A5D076F31CA4234E003528EE /* MissingXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissingXibView.swift; sourceTree = "<group>"; };
+		A5D076F41CA4234E003528EE /* SameNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SameNameView.swift; sourceTree = "<group>"; };
+		A5D076F51CA4234E003528EE /* SameNameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SameNameView.xib; sourceTree = "<group>"; };
+		A5D076FE1CA4236F003528EE /* UIViewNibExtensions-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewNibExtensions-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5D077001CA42489003528EE /* UIView+NibExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +82,7 @@
 		A5D0769F1CA42241003528EE = {
 			isa = PBXGroup;
 			children = (
+				A5D076FF1CA42489003528EE /* RMUIViewNibExtension */,
 				A5D076AA1CA42241003528EE /* UIViewNibExtensionsExample */,
 				A5D076C41CA42242003528EE /* UIViewNibExtensionsExampleTests */,
 				A5D076A91CA42241003528EE /* Products */,
@@ -81,14 +101,15 @@
 		A5D076AA1CA42241003528EE /* UIViewNibExtensionsExample */ = {
 			isa = PBXGroup;
 			children = (
+				A5D076EE1CA4234E003528EE /* Views */,
+				A5D076D01CA42262003528EE /* ViewControllers */,
 				A5D076AE1CA42241003528EE /* AppDelegate.h */,
 				A5D076AF1CA42241003528EE /* AppDelegate.m */,
-				A5D076B11CA42241003528EE /* ViewController.h */,
-				A5D076B21CA42241003528EE /* ViewController.m */,
 				A5D076B41CA42241003528EE /* Main.storyboard */,
 				A5D076B71CA42241003528EE /* Assets.xcassets */,
 				A5D076B91CA42241003528EE /* LaunchScreen.storyboard */,
 				A5D076BC1CA42241003528EE /* Info.plist */,
+				A5D076FE1CA4236F003528EE /* UIViewNibExtensions-Bridging-Header.h */,
 				A5D076AB1CA42241003528EE /* Supporting Files */,
 			);
 			path = UIViewNibExtensionsExample;
@@ -109,6 +130,38 @@
 				A5D076C71CA42242003528EE /* Info.plist */,
 			);
 			path = UIViewNibExtensionsExampleTests;
+			sourceTree = "<group>";
+		};
+		A5D076D01CA42262003528EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5D076D11CA42262003528EE /* OtherViewController.h */,
+				A5D076D21CA42262003528EE /* OtherViewController.m */,
+				A5D076D31CA42262003528EE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A5D076EE1CA4234E003528EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5D076EF1CA4234E003528EE /* DifferentNameView.swift */,
+				A5D076F01CA4234E003528EE /* DifferentXibNameView.xib */,
+				A5D076F11CA4234E003528EE /* MismatchingTypeXibView.swift */,
+				A5D076F21CA4234E003528EE /* MismatchingTypeXibView.xib */,
+				A5D076F31CA4234E003528EE /* MissingXibView.swift */,
+				A5D076F41CA4234E003528EE /* SameNameView.swift */,
+				A5D076F51CA4234E003528EE /* SameNameView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5D076FF1CA42489003528EE /* RMUIViewNibExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A5D077001CA42489003528EE /* UIView+NibExtension.swift */,
+			);
+			path = RMUIViewNibExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +244,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D076F91CA4234E003528EE /* MismatchingTypeXibView.xib in Resources */,
 				A5D076BB1CA42241003528EE /* LaunchScreen.storyboard in Resources */,
 				A5D076B81CA42241003528EE /* Assets.xcassets in Resources */,
+				A5D076FC1CA4234E003528EE /* SameNameView.xib in Resources */,
 				A5D076B61CA42241003528EE /* Main.storyboard in Resources */,
+				A5D076F71CA4234E003528EE /* DifferentXibNameView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5D076B31CA42241003528EE /* ViewController.m in Sources */,
+				A5D076DC1CA42262003528EE /* OtherViewController.m in Sources */,
 				A5D076B01CA42241003528EE /* AppDelegate.m in Sources */,
+				A5D076DD1CA42262003528EE /* ViewController.swift in Sources */,
+				A5D076F81CA4234E003528EE /* MismatchingTypeXibView.swift in Sources */,
+				A5D076FD1CA42357003528EE /* DifferentNameView.swift in Sources */,
+				A5D076FB1CA4234E003528EE /* SameNameView.swift in Sources */,
+				A5D077011CA42489003528EE /* UIView+NibExtension.swift in Sources */,
 				A5D076AD1CA42241003528EE /* main.m in Sources */,
+				A5D076FA1CA4234E003528EE /* MissingXibView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +357,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "UIViewNibExtensionsExample/UIViewNibExtensions-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -331,6 +394,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "UIViewNibExtensionsExample/UIViewNibExtensions-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
