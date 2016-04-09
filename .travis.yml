@@ -5,4 +5,5 @@ language: objective-c
 os: osx
 osx_image: xcode7.3
 script:
-  - xcodebuild clean build test -project UIViewNibExtensionsExample.xcodeproj -scheme UIViewNibExtensionsExample -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3' GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES
+  - xctool -project UIViewNibExtensionsExample.xcodeproj -sdk iphonesimulator -scheme UIViewNibExtensionsExample
+  - xctool -project UIViewNibExtensionsExample.xcodeproj -sdk iphonesimulator -scheme UIViewNibExtensionsExample test
