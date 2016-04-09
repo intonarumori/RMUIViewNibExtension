@@ -1,0 +1,8 @@
+branches:
+  only:
+    - master
+language: objective-c
+os: osx
+osx_image: xcode7.3
+script:
+  - xctool -project UIViewNibExtensionsExample.xcodeproj -sdk iphonesimulator -scheme UIViewNibExtensionsExample build
