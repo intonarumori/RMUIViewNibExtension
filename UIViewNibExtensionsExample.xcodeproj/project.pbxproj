@@ -10,7 +10,6 @@
 		A5D076B61CA42241003528EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D076B41CA42241003528EE /* Main.storyboard */; };
 		A5D076B81CA42241003528EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D076B71CA42241003528EE /* Assets.xcassets */; };
 		A5D076BB1CA42241003528EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D076B91CA42241003528EE /* LaunchScreen.storyboard */; };
-		A5D076C61CA42242003528EE /* UIViewNibExtensionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D076C51CA42242003528EE /* UIViewNibExtensionsExampleTests.m */; };
 		A5D076DC1CA42262003528EE /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D076D21CA42262003528EE /* OtherViewController.m */; };
 		A5D076DD1CA42262003528EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D076D31CA42262003528EE /* ViewController.swift */; };
 		A5D076F71CA4234E003528EE /* DifferentXibNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D076F01CA4234E003528EE /* DifferentXibNameView.xib */; };
@@ -21,6 +20,7 @@
 		A5D076FC1CA4234E003528EE /* SameNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D076F51CA4234E003528EE /* SameNameView.xib */; };
 		A5D076FD1CA42357003528EE /* DifferentNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D076EF1CA4234E003528EE /* DifferentNameView.swift */; };
 		A5D077011CA42489003528EE /* UIView+NibExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D077001CA42489003528EE /* UIView+NibExtension.swift */; };
+		A5FAB02F1CB93B1800E50FFF /* UIViewNibExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAB02E1CB93B1800E50FFF /* UIViewNibExtensionTests.swift */; };
 		A5FAB0311CB93B7100E50FFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAB0301CB93B7100E50FFF /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,6 @@
 		A5D076BA1CA42241003528EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5D076BC1CA42241003528EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D076C11CA42242003528EE /* UIViewNibExtensionsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewNibExtensionsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5D076C51CA42242003528EE /* UIViewNibExtensionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewNibExtensionsExampleTests.m; sourceTree = "<group>"; };
 		A5D076C71CA42242003528EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5D076D11CA42262003528EE /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		A5D076D21CA42262003528EE /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
@@ -55,6 +54,8 @@
 		A5D076F51CA4234E003528EE /* SameNameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SameNameView.xib; sourceTree = "<group>"; };
 		A5D076FE1CA4236F003528EE /* UIViewNibExtensions-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewNibExtensions-Bridging-Header.h"; sourceTree = "<group>"; };
 		A5D077001CA42489003528EE /* UIView+NibExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibExtension.swift"; sourceTree = "<group>"; };
+		A5FAB02D1CB93B1700E50FFF /* UIViewNibExtensionsExampleTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewNibExtensionsExampleTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5FAB02E1CB93B1800E50FFF /* UIViewNibExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewNibExtensionTests.swift; sourceTree = "<group>"; };
 		A5FAB0301CB93B7100E50FFF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,8 +122,9 @@
 		A5D076C41CA42242003528EE /* UIViewNibExtensionsExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				A5D076C51CA42242003528EE /* UIViewNibExtensionsExampleTests.m */,
 				A5D076C71CA42242003528EE /* Info.plist */,
+				A5FAB02E1CB93B1800E50FFF /* UIViewNibExtensionTests.swift */,
+				A5FAB02D1CB93B1700E50FFF /* UIViewNibExtensionsExampleTests-Bridging-Header.h */,
 			);
 			path = UIViewNibExtensionsExampleTests;
 			sourceTree = "<group>";
@@ -278,7 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5D076C61CA42242003528EE /* UIViewNibExtensionsExampleTests.m in Sources */,
+				A5FAB02F1CB93B1800E50FFF /* UIViewNibExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +427,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hu.rumori.UIViewNibExtensionsExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIViewNibExtensionsExampleTests/UIViewNibExtensionsExampleTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIViewNibExtensionsExample.app/UIViewNibExtensionsExample";
 			};
 			name = Debug;
@@ -433,10 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UIViewNibExtensionsExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hu.rumori.UIViewNibExtensionsExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UIViewNibExtensionsExampleTests/UIViewNibExtensionsExampleTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIViewNibExtensionsExample.app/UIViewNibExtensionsExample";
 			};
 			name = Release;
@@ -460,6 +466,7 @@
 				A5D076CC1CA42242003528EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5D076CD1CA42242003528EE /* Build configuration list for PBXNativeTarget "UIViewNibExtensionsExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				A5D076CF1CA42242003528EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
