@@ -32,8 +32,8 @@ public extension UIView {
      
      - Returns: the nib name associated with the current class
      */
-    class func nibName() -> String {
-        return NSStringFromClass(self).componentsSeparatedByString(".").last!
+    public class func nibName() -> String {
+        return NSStringFromClass(self).components(separatedBy: ".").last!
     }
     
     // MARK:
@@ -46,7 +46,7 @@ public extension UIView {
     
     - Returns: the initiated view object matching the current class or nil
     */
-    class func instantiateFromNib() -> Self? {
+    public class func instantiateFromNib() -> Self? {
         return self.instantiateFromNib(nil)
     }
 
@@ -60,7 +60,7 @@ public extension UIView {
      
      - Returns: the initiated view object matching the current class or nil
      */
-    class func instantiateFromNib(owner:AnyObject?) -> Self? {
+    public class func instantiateFromNib(_ owner:AnyObject?) -> Self? {
         return self.instantiateFromNib(owner, options: nil)
     }
     
@@ -75,7 +75,7 @@ public extension UIView {
      
      - Returns: the initiated view object matching the current class or nil
     */
-    class func instantiateFromNib(owner:AnyObject?, options:[NSObject : AnyObject]?) -> Self? {
+    public class func instantiateFromNib(_ owner:AnyObject?, options:[AnyHashable: Any]?) -> Self? {
 
         /**
         We need this little hack, so the compiler will infer the type from Self.
@@ -85,10 +85,10 @@ public extension UIView {
         return instantiateFromNibHelper(owner, options:options)
     }
 
-    private class func instantiateFromNibHelper<T>(owner:AnyObject?, options:[NSObject : AnyObject]?) -> T? {
+    fileprivate class func instantiateFromNibHelper<T>(_ owner:AnyObject?, options:[AnyHashable: Any]?) -> T? {
         
         if let nib = self.getNib() {
-            let views = nib.instantiateWithOwner(owner, options: options)
+            let views = nib.instantiate(withOwner: owner, options: options)
             if let view = views.first as? T {
                 return view
             } else {
@@ -105,12 +105,12 @@ public extension UIView {
      
      - Returns: the `UINib` object or `nil`
      */
-    class func getNib() -> UINib? {
+    public class func getNib() -> UINib? {
 
-        let bundle = NSBundle(forClass: self)
+        let bundle = Bundle(for: self)
         
         let nibName = self.nibName()
-        if let _ = bundle.pathForResource(nibName, ofType: "nib") {
+        if let _ = bundle.path(forResource: nibName, ofType: "nib") {
             return UINib(nibName: nibName, bundle: bundle)
         } else {
             print("Could not find Nib for class \"\(self)\"")
