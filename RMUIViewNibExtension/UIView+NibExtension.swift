@@ -32,7 +32,7 @@ public extension UIView {
      
      - Returns: the nib name associated with the current class
      */
-    public class func nibName() -> String {
+    @objc public class func nibName() -> String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }
     
@@ -46,7 +46,7 @@ public extension UIView {
     
     - Returns: the initiated view object matching the current class or nil
     */
-    public class func instantiateFromNib() -> Self? {
+    @objc public class func instantiateFromNib() -> Self? {
         return self.instantiateFromNib(nil)
     }
 
@@ -60,7 +60,7 @@ public extension UIView {
      
      - Returns: the initiated view object matching the current class or nil
      */
-    public class func instantiateFromNib(_ owner:AnyObject?) -> Self? {
+    @objc public class func instantiateFromNib(_ owner:AnyObject?) -> Self? {
         return self.instantiateFromNib(owner, options: nil)
     }
     
@@ -75,7 +75,7 @@ public extension UIView {
      
      - Returns: the initiated view object matching the current class or nil
     */
-    public class func instantiateFromNib(_ owner:AnyObject?, options:[AnyHashable: Any]?) -> Self? {
+    @objc public class func instantiateFromNib(_ owner:AnyObject?, options:[AnyHashable: Any]?) -> Self? {
 
         /**
         We need this little hack, so the compiler will infer the type from Self.
@@ -105,7 +105,7 @@ public extension UIView {
      
      - Returns: the `UINib` object or `nil`
      */
-    public class func getNib() -> UINib? {
+    @objc public class func getNib() -> UINib? {
 
         let bundle = Bundle(for: self)
         
